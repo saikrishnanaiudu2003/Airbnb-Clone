@@ -30,7 +30,5 @@ export async function GET() {
       },
     });
   }
-  return NextResponse.redirect(
-    "https://airbnb-clone-lovat-eta.vercel.app"
-  );
+  return NextResponse.redirect("https://airbnb-clone-lovat-eta.vercel.app")
 }
