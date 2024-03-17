@@ -31,6 +31,6 @@ export async function GET() {
     });
   }
   return NextResponse.redirect(
-    "https://localhost:3000"
+    "https://airbnb-clone-5sxtjzwpg-saikrishnas-projects-1d05a103.vercel.app"
   );
 }
