@@ -5,8 +5,11 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { unstable_noStore as noStore} from "next/cache";
+
 
 const Description = ({params}:{params:{id:string}}) => {
+  noStore();
   return (
     <>
       <div className="w-3/5 mx-auto">

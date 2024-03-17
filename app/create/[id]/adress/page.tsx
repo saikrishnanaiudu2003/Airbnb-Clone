@@ -6,10 +6,12 @@ import { userCountires } from "@/app/lib/getCountries";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
 import dynamic from "next/dynamic";
-import { it } from "node:test";
 import { useState } from "react";
+import { unstable_noStore as noStore} from "next/cache";
+
 
 const Adress = ({params}:{params:{id:string}})=>{
+    noStore();
     const {getAllCountries}=userCountires()
     const [getLocation,setLocation]=useState("")
 

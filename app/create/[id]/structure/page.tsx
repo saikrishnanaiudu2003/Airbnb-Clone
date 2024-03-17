@@ -4,8 +4,12 @@ import { createCategoryPage } from "@/app/actions";
 import CreationBottomBar from "@/app/component/CreationBottomBar";
 import SelectedItem from "@/app/component/SelectedItem";
 import { Button } from "@/components/ui/button";
+import { unstable_noStore as noStore} from "next/cache";
+
 
 const Structure = ({params}:{params:{id:string}})=>{
+    noStore();
+    
     return(
         <>
         <div className="w-3/5 mx-auto">
